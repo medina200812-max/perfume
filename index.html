@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        background-color: rgb(255, 255, 255);
+        height: 500px;
+        border-radius: 10px;
+        display: flex;
+        width: 600px;
+        flex-direction: center;
+        justify-content: space-evenly;
+      }
+      .product {
+        width: 300px;
+        border-radius: 10px 0px 0px 10px;
+        display: flex;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        padding: 20px;
+        margin-top: 5px;
+      }
+      .info {
+        display: flex;
+      }
+      .info2 {
+        display: flex;
+      }
+      .price1 {
+        font-size: 30px;
+        color: hsl(158, 36%, 37%);
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+      .price2 {
+        display: flex;
+        flex-direction: center;
+      }
+      .PERFUME {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: hsl(228, 12%, 48%);
+      }
+      button {
+        background-color: hsl(158, 36%, 37%);
+        width: 85%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="product"
+        src="images/image-product-desktop.jpg"
+        alt="product"
+      />
+      <div class="card">
+        <p class="PERFUME">PERFUME</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="info2">
+          <p class="price1">$149.99</p>
+          <p class="price2">$169.99</p>
+        </div>
+        <div class="info">
+          <img src="images/icon-cart.svg" alt="icon" />
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
